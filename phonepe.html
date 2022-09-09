@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+                sm: '480px',
+                md: '768px',
+                lg: '976px',
+                xl: '1440px',
+            },
+        extend: {
+          colors: {
+            coloroftex:'#4CDEFF',
+            coloroftex2:'#B99DF6',
+            coloroftex3:'#592DA1',
+            coloroftex4:'#967EDD',
+            coloroftex5:'#E5E1FB',
+            
+
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+    <section class="bg-white">
+        <div class="flex flex-row items-center p-6 gap-20 md:ml-20">
+            <div class="flex reletive">
+                <img class="md:w-44 reletive" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMzIgNDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZT4uc3Qwe2ZpbGw6IzVmMjU5Zn08L3N0eWxlPjxjaXJjbGUgdHJhbnNmb3JtPSJyb3RhdGUoLTc2LjcxNCAxNy44NyAyNC4wMDEpIiBjbGFzcz0ic3QwIiBjeD0iMTcuOSIgY3k9IjI0IiByPSIxNy45Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTkwLjUgMzQuMnYtNi41YzAtMS42LS42LTIuNC0yLjEtMi40LS42IDAtMS4zLjEtMS43LjJWMzVjMCAuMy0uMy42LS42LjZoLTIuM2MtLjMgMC0uNi0uMy0uNi0uNlYyMy45YzAtLjQuMy0uNy42LS44IDEuNS0uNSAzLS44IDQuNi0uOCAzLjYgMCA1LjYgMS45IDUuNiA1LjR2Ny40YzAgLjMtLjMuNi0uNi42SDkyYy0uOSAwLTEuNS0uNy0xLjUtMS41em05LTMuOWwtLjEuOWMwIDEuMi44IDEuOSAyLjEgMS45IDEgMCAxLjktLjMgMi45LS44LjEgMCAuMi0uMS4zLS4xLjIgMCAuMy4xLjQuMi4xLjEuMy40LjMuNC4yLjMuNC43LjQgMSAwIC41LS4zIDEtLjcgMS4yLTEuMS42LTIuNC45LTMuOC45LTEuNiAwLTIuOS0uNC0zLjktMS4yLTEtLjktMS42LTIuMS0xLjYtMy42di0zLjljMC0zLjEgMi01IDUuNC01IDMuMyAwIDUuMiAxLjggNS4yIDV2Mi40YzAgLjMtLjMuNi0uNi42aC02LjN6bS0uMS0yLjJIMTAzLjJ2LTFjMC0xLjItLjctMi0xLjktMnMtMS45LjctMS45IDJ2MXptMjUuNSAyLjJsLS4xLjljMCAxLjIuOCAxLjkgMi4xIDEuOSAxIDAgMS45LS4zIDIuOS0uOC4xIDAgLjItLjEuMy0uMS4yIDAgLjMuMS40LjIuMS4xLjMuNC4zLjQuMi4zLjQuNy40IDEgMCAuNS0uMyAxLS43IDEuMi0xLjEuNi0yLjQuOS0zLjguOS0xLjYgMC0yLjktLjQtMy45LTEuMi0xLS45LTEuNi0yLjEtMS42LTMuNnYtMy45YzAtMy4xIDItNSA1LjQtNSAzLjMgMCA1LjIgMS44IDUuMiA1djIuNGMwIC4zLS4zLjYtLjYuNmgtNi4zem0tLjEtMi4ySDEyOC42di0xYzAtMS4yLS43LTItMS45LTJzLTEuOS43LTEuOSAydjF6TTY2IDM1LjdoMS40Yy4zIDAgLjYtLjMuNi0uNnYtNy40YzAtMy40LTEuOC01LjQtNC44LTUuNC0uOSAwLTEuOS4yLTIuNS40VjE5YzAtLjgtLjctMS41LTEuNS0xLjVoLTEuNGMtLjMgMC0uNi4zLS42LjZ2MTdjMCAuMy4zLjYuNi42aDIuM2MuMyAwIC42LS4zLjYtLjZ2LTkuNGMuNS0uMiAxLjItLjMgMS43LS4zIDEuNSAwIDIuMS43IDIuMSAyLjR2Ni41Yy4xLjcuNyAxLjQgMS41IDEuNHptMTUuMS04LjRWMzFjMCAzLjEtMi4xIDUtNS42IDUtMy40IDAtNS42LTEuOS01LjYtNXYtMy43YzAtMy4xIDIuMS01IDUuNi01IDMuNSAwIDUuNiAxLjkgNS42IDV6bS0zLjUgMGMwLTEuMi0uNy0yLTItMnMtMiAuNy0yIDJWMzFjMCAxLjIuNyAxLjkgMiAxLjlzMi0uNyAyLTEuOXYtMy43em0tMjIuMy0xLjdjMCAzLjItMi40IDUuNC01LjYgNS40LS44IDAtMS41LS4xLTIuMi0uNHY0LjVjMCAuMy0uMy42LS42LjZoLTIuM2MtLjMgMC0uNi0uMy0uNi0uNlYxOS4yYzAtLjQuMy0uNy42LS44IDEuNS0uNSAzLS44IDQuNi0uOCAzLjYgMCA2LjEgMi4yIDYuMSA1LjZ2Mi40ek01MS43IDIzYzAtMS42LTEuMS0yLjQtMi42LTIuNC0uOSAwLTEuNS4zLTEuNS4zdjYuNmMuNi4zLjkuNCAxLjYuNCAxLjUgMCAyLjYtLjkgMi42LTIuNFYyM3ptNjguMiAyLjZjMCAzLjItMi40IDUuNC01LjYgNS40LS44IDAtMS41LS4xLTIuMi0uNHY0LjVjMCAuMy0uMy42LS42LjZoLTIuM2MtLjMgMC0uNi0uMy0uNi0uNlYxOS4yYzAtLjQuMy0uNy42LS44IDEuNS0uNSAzLS44IDQuNi0uOCAzLjYgMCA2LjEgMi4yIDYuMSA1LjZ2Mi40em0tMy42LTIuNmMwLTEuNi0xLjEtMi40LTIuNi0yLjQtLjkgMC0xLjUuMy0xLjUuM3Y2LjZjLjYuMy45LjQgMS42LjQgMS41IDAgMi42LS45IDIuNi0yLjRWMjN6Ii8+PHBhdGggZD0iTTI2IDE5LjNjMC0uNy0uNi0xLjMtMS4zLTEuM2gtMi40bC01LjUtNi4zYy0uNS0uNi0xLjMtLjgtMi4xLS42bC0xLjkuNmMtLjMuMS0uNC41LS4yLjdsNiA1LjdIOS41Yy0uMyAwLS41LjItLjUuNXYxYzAgLjcuNiAxLjMgMS4zIDEuM2gxLjR2NC44YzAgMy42IDEuOSA1LjcgNS4xIDUuNyAxIDAgMS44LS4xIDIuOC0uNXYzLjJjMCAuOS43IDEuNiAxLjYgMS42aDEuNGMuMyAwIC42LS4zLjYtLjZWMjAuOGgyLjNjLjMgMCAuNS0uMi41LS41di0xem0tNi40IDguNmMtLjYuMy0xLjQuNC0yIC40LTEuNiAwLTIuNC0uOC0yLjQtMi42di00LjhoNC40djd6IiBmaWxsPSIjZmZmIi8+PC9zdmc+" alt="">
+                <div class="">
+                    <img class="w-12 ml-24 md:hidden" src="https://static.thenounproject.com/png/2135886-200.png" alt="">
+                </div>
+
+            </div>
+            <div>
+                <ul class="hidden md:flex space-x-16 reletive font-semibold">
+                    <li>BUSINESS SOLUTION</li>
+                    <li>PRESS</li>
+                    <li>CAREERS</li>
+                    <li>ABOUT US</li>
+                    <li>BLOG</li>
+                    <li>CONTACT US</li>
+                    <li>TRUST AND SAFELY</li>
+                </ul>
+            </div>    
+        </div>   
+    </section>
+
+<!-- hero section--01 -->
+<section>
+    <div class="w-[100%] h-[100vh] bg-no-repeat text-white " style="background-image:url('./hp-banner4wt.png') ;">
+
+        <div class="md:text-left text-center md:p-32 pt-28">
+
+            <h1 class="text-white text-6xl font-bold p-2">PhonePe<span class="text-coloroftex">Plus</span></h1>
+
+            <h1 class="md:text-3xl sm:text-2xl font-bold text-coloroftex2 p-2">Beat of Progress</h1>
+
+            <p class="text-coloroftex2 p-2">Find out how money moves in a country of 140<br> Crore! Now updated with the latest data for Q1 2022<br> (Jan-Mar)</p>
+
+            <button class="rounded-full bg-transparent border-2 p-2 w-44 border-coloroftex">Explore Now</button>
+
+        </div>
+    </div>
+</section>
+
+<section class="">
+    <div class="inline-flex flex-row flex-wrap justify-center gap-20 md:ml-[8rem] mt-[-2rem] cursor-pointer">
+        <div class="flex p-10 border border-black rounded-lg gap-20 hover:shadow-xl hover:border-none">
+            <div>
+                <h1 class="text-2xl text-coloroftex3 font-semibold">Insurance made easy</h1>
+                <p class="mt-6">Secure your life helth<br> vehicles & more</p>
+                <img src="https://img.icons8.com/ios/50/000000/long-arrow-right.png"/>
+            </div>
+            <div>
+                <img class="w-44" src="https://cdn-icons-png.flaticon.com/512/281/281756.png" alt="">
+    
+            </div>
+        </div>
+    
+        <div class="flex p-10 border border-black rounded-lg gap-20 hover:shadow-xl hover:border-none">
+            <div>
+                <h1 class="text-2xl text-coloroftex3 font-semibold">Insurance made easy</h1>
+                <p class="mt-6">Secure your life helth<br> vehicles & more</p>
+                <img src="https://img.icons8.com/ios/50/000000/long-arrow-right.png"/>
+            </div>
+            <div>
+                <img class="w-44" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjYwIiBoZWlnaHQ9IjI5OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMTU5KSI+PHBhdGggZD0iTTIzMy4xNDcgMTI5LjdjMC01LjEzNi01Mi4xOTItOS4yOTktMTE2LjU3NC05LjI5OVMwIDEyNC41NjQgMCAxMjkuNzAxQzAgMTM0LjgzNyA1Mi4xOTEgMTM5IDExNi41NzMgMTM5YzY0LjM4MiAwIDExNi41NzQtNC4xNjMgMTE2LjU3NC05LjMiIGZpbGw9IiM5Mjg2QkQiLz48cGF0aCBkPSJNMTQuNjMzIDEzLjcwNGwxMy45MTMgMzAuMjkyQzMzLjY5MiA1NS4xOTkgMzcuNDUgNjYuOTYgNDAuMjcgNzguOTZjMy42OCAxNS42NTcgMTQuMDcyIDI4LjcyNiAyNy45NzUgMzYuMDQyaC0uNDA4djEyLjI1MmgxMTcuOTU4di0xMi4yNTJoLS40MDdjMTMuOTAyLTcuMzE2IDI0LjI5NS0yMC4zODUgMjcuOTc0LTM2LjA0MiAyLjgyLTEyIDYuNTc4LTIzLjc2IDExLjcyNS0zNC45NjRMMjM5IDEzLjcwNEgxNC42MzN6IiBmaWxsPSIjODA2QUJGIi8+PGVsbGlwc2Ugc3Ryb2tlPSIjOTc5Nzk3IiBmaWxsPSIjNjIyN0EwIiBjeD0iMTI2LjgxNiIgY3k9IjE1LjE3MyIgcng9IjExMi4xODQiIHJ5PSIxNS4xNzMiLz48L2c+PHBhdGggZD0iTTM0IDIxOC43MjZjMTkuMzQzLTEzLjYxNCAzNy4xMjYtMTYuMzA1IDUzLjM1LTguMDczQzExMS42ODUgMjIzIDEyMC41NzYgMjIzIDEzNi4wMiAyMjNjMTUuNDQzIDAgMzIuNzU4LTE2LjYyMSA1MS45NDYtMTYuNjIxQzIwNy4xNTMgMjA2LjM3OSAyMTMuNzA0IDIyMyAyMjQgMjIzIiBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iNiIvPjxwYXRoIGQ9Ik0zNCAyMzkuNzI2YzE5LjM0My0xMy42MTQgMzcuMTI2LTE2LjMwNSA1My4zNS04LjA3M0MxMTEuNjg1IDI0NCAxMjAuNTc2IDI0NCAxMzYuMDIgMjQ0YzE1LjQ0MyAwIDMyLjc1OC0xNi42MjEgNTEuOTQ2LTE2LjYyMUMyMDcuMTUzIDIyNy4zNzkgMjEzLjcwNCAyNDQgMjI0IDI0NCIgc3Ryb2tlPSIjRkZGIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNMzQgMjU3LjcyNmMxOS4zNDMtMTMuNjE0IDM3LjEyNi0xNi4zMDUgNTMuMzUtOC4wNzNDMTExLjY4NSAyNjIgMTIwLjU3NiAyNjIgMTM2LjAyIDI2MmMxNS40NDMgMCAzMi43NTgtMTYuNjIxIDUxLjk0Ni0xNi42MjFDMjA3LjE1MyAyNDUuMzc5IDIxMy43MDQgMjYyIDIyNCAyNjIiIHN0cm9rZT0iI0ZGRiIvPjxlbGxpcHNlIGZpbGw9IiMxQzFDMUMiIGN4PSIxMjQuNSIgY3k9IjE3OS41IiByeD0iOTcuNSIgcnk9IjcuNSIvPjxwYXRoIGQ9Ik02NyA0NUEzIDMgMCAxMTYxIDQ1IDMgMyAwIDAxNjcgNDUiIGZpbGw9IiMxQzFDMUMiLz48cGF0aCBkPSJNMjI2Ljk5OCAyOC4zN2MuMDc5IDMuMDM3LTIuNTQzIDUuNTU3LTUuODU2IDUuNjI4LTMuMzEzLjA3Mi02LjA2Mi0yLjMzMS02LjE0LTUuMzY4LS4wNzktMy4wMzcgMi41NDItNS41NTcgNS44NTYtNS42MjggMy4zMTMtLjA3MiA2LjA2MiAyLjMzIDYuMTQgNS4zNjgiIGZpbGw9IiNCQkIiLz48ZyBmaWxsPSIjN0M3QUMyIj48cGF0aCBkPSJNMTY5LjUyOCAxODZoMi45NDRWNzkuNzcxaC0yLjk0NHoiLz48cGF0aCBkPSJNMTQ1LjYxNiAxNDkuOTRzLTYuNzgzIDI4LjM2MyAyNC42NjYgMzAuMjEzYzAgMCA0LjMxNi0yNy4xMjktMjQuNjY2LTMwLjIxMiIvPjxwYXRoIGQ9Ik0xOTYuODU2IDE0My4xMjhzLTI5LTEuNDAyLTI0Ljk4NCAzMC4yMDNjMCAwIDI3LjMzNy0uODE3IDI0Ljk4NC0zMC4yMDNNMTQ2LjU5NyAxMDQuMTM2cy02Ljc4MiAyOC4zNjIgMjQuNjY2IDMwLjIxMWMwIDAgNC4zMTctMjcuMTI4LTI0LjY2Ni0zMC4yMTEiLz48cGF0aCBkPSJNMTk2Ljg1NiAxMDAuMjQ3cy0yOS0xLjQwNC0yNC45ODQgMzAuMjAyYzAgMCAyNy4zMzctLjgxNiAyNC45ODQtMzAuMjAyTTE2OC42ODMgNzFzLTIxLjM2NCAxOC4zNjEgMS44NjUgMzguMDA4YzAgMCAxOC43NTgtMTguODItMS44NjUtMzguMDA4Ii8+PC9nPjxwYXRoIGQ9Ik03Ny42MDQgMTI1cy02LjY0OCAyNy4yMjQgMjQuMTczIDI5YzAgMCA0LjIzLTI2LjA0LTI0LjE3My0yOSIgZmlsbD0iIzQ2QzJDMyIvPjxwYXRoIGQ9Ik0xMjguODY1IDEyNC4wMDlzLTI3LjI4NC0xLjM0Ni0yMy41MDYgMjguOTkxYzAgMCAyNS43MTktLjc4MyAyMy41MDYtMjguOTkxTTM4LjYwNCA4MXMtNi42NDggMjcuMjI0IDI0LjE3MyAyOWMwIDAgNC4yMy0yNi4wNC0yNC4xNzMtMjlNMzguNjA0IDE1MnMtNi42NDggMjguMTYzIDI0LjE3MyAzMGMwIDAgNC4yMy0yNi45MzgtMjQuMTczLTMwIiBmaWxsPSIjNDZDMkMzIi8+PHBhdGggZD0iTTg4Ljg2NSA4Mi4wMDlTNjEuNTggODAuNjYzIDY1LjM1OSAxMTFjMCAwIDI1LjcyLS43ODMgMjMuNTA2LTI4Ljk5MSIgZmlsbD0iIzQ2QzJDMyIvPjxwYXRoIGQ9Ik0yMjYuODYgMTI3LjAwOXMtMjguNDIxLTEuMzQ2LTI0LjQ4NiAyOC45OTFjMCAwIDI2Ljc5LS43ODMgMjQuNDg1LTI4Ljk5MU0yMjcuODYgODkuMDA5UzE5OS40MzggODcuNjYzIDIwMy4zNzMgMTE4YzAgMCAyNi43OTEtLjc4MyAyNC40ODUtMjguOTkxIiBmaWxsPSIjN0M3QUMyIi8+PHBhdGggZD0iTTkwLjg2NSAxNTUuMDFTNjMuNTggMTUzLjYxNiA2Ny4zNTkgMTg1YzAgMCAyNS43Mi0uODEgMjMuNTA2LTI5Ljk5TTYzLjEzNyA1M1M0MS4zNjMgNzEuMzU3IDY1LjA0IDkxYzAgMCAxOS4xMi0xOC44MTUtMS45MDItMzhNMTAyLjEzNyA4N3MtMjEuNzc0IDE4LjM1NyAxLjkwMiAzOGMwIDAgMTkuMTItMTguODE1LTEuOTAyLTM4IiBmaWxsPSIjNDZDMkMzIi8+PHBhdGggZD0iTTE3NS42MDQgNDlzLTYuNjQ4IDI3LjIyNSAyNC4xNzMgMjljMCAwIDQuMjMtMjYuMDQtMjQuMTczLTI5TTIyNy44NjUgNTAuMDA5UzIwMC41OCA0OC42NjIgMjA0LjM1OSA3OWMwIDAgMjUuNzItLjc4MyAyMy41MDYtMjguOTkxIiBmaWxsPSIjN0M3QUMyIi8+PHBhdGggZmlsbD0iIzdDN0FDMiIgZD0iTTIwMCAxODdoMlY1MWgtMnoiLz48cGF0aCBmaWxsPSIjNDZDMkMzIiBkPSJNNjQgMTg3aDJWODRoLTJ6TTI5IDE4Mmgxdi00NWgtMXpNMTAzIDE4N2gzdi03OWgtM3oiLz48cGF0aCBkPSJNMjAwLjEzNyAyMXMtMjEuNzc0IDE4LjM1NyAxLjkwMiAzOGMwIDAgMTkuMTItMTguODE2LTEuOTAyLTM4IiBmaWxsPSIjN0M3QUMyIi8+PHBhdGggZD0iTTI2MCAxLjUxNmExLjUgMS41IDAgMTEtMy4wMDEtLjAzNCAxLjUgMS41IDAgMDEzIC4wMzQiIGZpbGw9IiM2ODVBOUIiLz48cGF0aCBkPSJNMjI1IDI0LjVjMCAxMi45NzktMTAuNTIyIDIzLjUtMjMuNSAyMy41LTEyLjk3OSAwLTIzLjUtMTAuNTIxLTIzLjUtMjMuNVMxODguNTIxIDEgMjAxLjUgMUMyMTQuNDc4IDEgMjI1IDExLjUyMSAyMjUgMjQuNU00NiAxMjkuNWMwIDEwLjc3LTguNTA3IDE5LjUtMTkgMTkuNS0xMC40OTQgMC0xOS04LjczLTE5LTE5LjVTMTYuNTA2IDExMCAyNyAxMTBjMTAuNDkzIDAgMTkgOC43MyAxOSAxOS41IiBmaWxsPSIjRkZCM0E3Ii8+PHBhdGggZD0iTTE0MCA1NmMwIDE0LjM2LTExLjY0MSAyNi0yNiAyNi0xNC4zNiAwLTI2LTExLjY0LTI2LTI2czExLjY0LTI2IDI2LTI2YzE0LjM1OSAwIDI2IDExLjY0IDI2IDI2IiBmaWxsPSIjREREOEZGIi8+PC9nPjx0ZXh0IGZvbnQtZmFtaWx5PSJQb3BwaW5zLVNlbWlCb2xkLCBQb3BwaW5zIiBmb250LXNpemU9IjMwIiBmb250LXdlaWdodD0iNTAwIiBsZXR0ZXItc3BhY2luZz0iLS40NSIgZmlsbD0iI0ZGRiI+PHRzcGFuIHg9IjE5MiIgeT0iMzQiPuKCuTwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGZvbnQtZmFtaWx5PSJQb3BwaW5zLVNlbWlCb2xkLCBQb3BwaW5zIiBmb250LXNpemU9IjMwIiBmb250LXdlaWdodD0iNTAwIiBsZXR0ZXItc3BhY2luZz0iLS40NSIgZmlsbD0iI0ZGRiI+PHRzcGFuIHg9IjE4IiB5PSIxMzkiPis8L3RzcGFuPjwvdGV4dD48dGV4dCBmb250LWZhbWlseT0iUG9wcGlucy1TZW1pQm9sZCwgUG9wcGlucyIgZm9udC1zaXplPSIzMCIgZm9udC13ZWlnaHQ9IjUwMCIgbGV0dGVyLXNwYWNpbmc9Ii0uNDUiIGZpbGw9IiNGRkYiPjx0c3BhbiB4PSIxMDQiIHk9IjY1Ij4lPC90c3Bhbj48L3RleHQ+PC9nPjwvc3ZnPg==" alt="">
+    
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="flex-col-reverse flex md:flex-row sm:w-[100%]  gap-32 mt-32 md:ml-24 space-x-16">
+        <div class="p-6">
+            <h1 class="text-4xl font-bold p-4 text-coloroftex3">Simple, Fast & Secure</h1>
+            <h1 class="text-2xl p-6 font-semibold">One app for all things money.</h1>
+            <p class="p-4">Pay bills, recharge, send money, buy gold, invest and shop at your<br> favourite stores.</p>
+            <hr>
+            <h1 class="text-2xl  p-4 font-semibold">Pay whenever you like, wherever you like.</h1>
+            <p class="p-4">Choose from options like UPI, the PhonePe wallet or your Debit and<br> Credit Card.</p>
+            <hr>
+            <h1 class="text-2xl  p-4 font-semibold">Find all your favourite apps on PhonePe Switch.</h1>
+            <p class="p-4">Book flights, order food or buy groceries. Use all your favourite apps<br> without downloading them.</p>
+        </div>
+        <div class="flex flex-row md:w-1/3 md:border">
+            <video width="500px" height="400px" controls>
+              <source loop src="https://website.phonepe.com/assets/page/home-fast-secure-v3.mp4" type="video/mp4">
+            </video>
+          </div>
+    </div>  
+</section>
+
+<section>
+    <div class="p-20 md:ml-96">
+        <img class="w-[500px]" src="https://www.phonepe.com/webstatic/static/644b8da4bdcf51af5dfa9de2619d473d/c3026/nt_insurance-mob.png" alt="">
+        <img class="w-44 md:ml-32 sm:ml-20" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMzIgNDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZT4uc3Qwe2ZpbGw6IzVmMjU5Zn08L3N0eWxlPjxjaXJjbGUgdHJhbnNmb3JtPSJyb3RhdGUoLTc2LjcxNCAxNy44NyAyNC4wMDEpIiBjbGFzcz0ic3QwIiBjeD0iMTcuOSIgY3k9IjI0IiByPSIxNy45Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTkwLjUgMzQuMnYtNi41YzAtMS42LS42LTIuNC0yLjEtMi40LS42IDAtMS4zLjEtMS43LjJWMzVjMCAuMy0uMy42LS42LjZoLTIuM2MtLjMgMC0uNi0uMy0uNi0uNlYyMy45YzAtLjQuMy0uNy42LS44IDEuNS0uNSAzLS44IDQuNi0uOCAzLjYgMCA1LjYgMS45IDUuNiA1LjR2Ny40YzAgLjMtLjMuNi0uNi42SDkyYy0uOSAwLTEuNS0uNy0xLjUtMS41em05LTMuOWwtLjEuOWMwIDEuMi44IDEuOSAyLjEgMS45IDEgMCAxLjktLjMgMi45LS44LjEgMCAuMi0uMS4zLS4xLjIgMCAuMy4xLjQuMi4xLjEuMy40LjMuNC4yLjMuNC43LjQgMSAwIC41LS4zIDEtLjcgMS4yLTEuMS42LTIuNC45LTMuOC45LTEuNiAwLTIuOS0uNC0zLjktMS4yLTEtLjktMS42LTIuMS0xLjYtMy42di0zLjljMC0zLjEgMi01IDUuNC01IDMuMyAwIDUuMiAxLjggNS4yIDV2Mi40YzAgLjMtLjMuNi0uNi42aC02LjN6bS0uMS0yLjJIMTAzLjJ2LTFjMC0xLjItLjctMi0xLjktMnMtMS45LjctMS45IDJ2MXptMjUuNSAyLjJsLS4xLjljMCAxLjIuOCAxLjkgMi4xIDEuOSAxIDAgMS45LS4zIDIuOS0uOC4xIDAgLjItLjEuMy0uMS4yIDAgLjMuMS40LjIuMS4xLjMuNC4zLjQuMi4zLjQuNy40IDEgMCAuNS0uMyAxLS43IDEuMi0xLjEuNi0yLjQuOS0zLjguOS0xLjYgMC0yLjktLjQtMy45LTEuMi0xLS45LTEuNi0yLjEtMS42LTMuNnYtMy45YzAtMy4xIDItNSA1LjQtNSAzLjMgMCA1LjIgMS44IDUuMiA1djIuNGMwIC4zLS4zLjYtLjYuNmgtNi4zem0tLjEtMi4ySDEyOC42di0xYzAtMS4yLS43LTItMS45LTJzLTEuOS43LTEuOSAydjF6TTY2IDM1LjdoMS40Yy4zIDAgLjYtLjMuNi0uNnYtNy40YzAtMy40LTEuOC01LjQtNC44LTUuNC0uOSAwLTEuOS4yLTIuNS40VjE5YzAtLjgtLjctMS41LTEuNS0xLjVoLTEuNGMtLjMgMC0uNi4zLS42LjZ2MTdjMCAuMy4zLjYuNi42aDIuM2MuMyAwIC42LS4zLjYtLjZ2LTkuNGMuNS0uMiAxLjItLjMgMS43LS4zIDEuNSAwIDIuMS43IDIuMSAyLjR2Ni41Yy4xLjcuNyAxLjQgMS41IDEuNHptMTUuMS04LjRWMzFjMCAzLjEtMi4xIDUtNS42IDUtMy40IDAtNS42LTEuOS01LjYtNXYtMy43YzAtMy4xIDIuMS01IDUuNi01IDMuNSAwIDUuNiAxLjkgNS42IDV6bS0zLjUgMGMwLTEuMi0uNy0yLTItMnMtMiAuNy0yIDJWMzFjMCAxLjIuNyAxLjkgMiAxLjlzMi0uNyAyLTEuOXYtMy43em0tMjIuMy0xLjdjMCAzLjItMi40IDUuNC01LjYgNS40LS44IDAtMS41LS4xLTIuMi0uNHY0LjVjMCAuMy0uMy42LS42LjZoLTIuM2MtLjMgMC0uNi0uMy0uNi0uNlYxOS4yYzAtLjQuMy0uNy42LS44IDEuNS0uNSAzLS44IDQuNi0uOCAzLjYgMCA2LjEgMi4yIDYuMSA1LjZ2Mi40ek01MS43IDIzYzAtMS42LTEuMS0yLjQtMi42LTIuNC0uOSAwLTEuNS4zLTEuNS4zdjYuNmMuNi4zLjkuNCAxLjYuNCAxLjUgMCAyLjYtLjkgMi42LTIuNFYyM3ptNjguMiAyLjZjMCAzLjItMi40IDUuNC01LjYgNS40LS44IDAtMS41LS4xLTIuMi0uNHY0LjVjMCAuMy0uMy42LS42LjZoLTIuM2MtLjMgMC0uNi0uMy0uNi0uNlYxOS4yYzAtLjQuMy0uNy42LS44IDEuNS0uNSAzLS44IDQuNi0uOCAzLjYgMCA2LjEgMi4yIDYuMSA1LjZ2Mi40em0tMy42LTIuNmMwLTEuNi0xLjEtMi40LTIuNi0yLjQtLjkgMC0xLjUuMy0xLjUuM3Y2LjZjLjYuMy45LjQgMS42LjQgMS41IDAgMi42LS45IDIuNi0yLjRWMjN6Ii8+PHBhdGggZD0iTTI2IDE5LjNjMC0uNy0uNi0xLjMtMS4zLTEuM2gtMi40bC01LjUtNi4zYy0uNS0uNi0xLjMtLjgtMi4xLS42bC0xLjkuNmMtLjMuMS0uNC41LS4yLjdsNiA1LjdIOS41Yy0uMyAwLS41LjItLjUuNXYxYzAgLjcuNiAxLjMgMS4zIDEuM2gxLjR2NC44YzAgMy42IDEuOSA1LjcgNS4xIDUuNyAxIDAgMS44LS4xIDIuOC0uNXYzLjJjMCAuOS43IDEuNiAxLjYgMS42aDEuNGMuMyAwIC42LS4zLjYtLjZWMjAuOGgyLjNjLjMgMCAuNS0uMi41LS41di0xem0tNi40IDguNmMtLjYuMy0xLjQuNC0yIC40LTEuNiAwLTIuNC0uOC0yLjQtMi42di00LjhoNC40djd6IiBmaWxsPSIjZmZmIi8+PC9zdmc+" alt="">
+    </div>
+</section>
+
+
+<section class="mb-32">
+    <div class="p-6 md:ml-96 ">
+        <div class="flex">
+           <a class="reletive md:ml-20"><img class="w-[500px] md:h-[500px] sm:h-[400px]" src="https://www.phonepe.com/webstatic/static/10fae576ec3dcacf706ff360c725f141/2b087/nt_thumb_4-mob.png"alt=""></a>
+
+           <a class="absolute" href="https://youtu.be/xKP6uFh2Fy0"><svg class="w-20 md:ml-72 ml-32  md:mt-52 mt-32 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM176 168V344C176 352.7 180.7 360.7 188.3 364.9C195.8 369.2 205.1 369 212.5 364.5L356.5 276.5C363.6 272.1 368 264.4 368 256C368 247.6 363.6 239.9 356.5 235.5L212.5 147.5C205.1 142.1 195.8 142.8 188.3 147.1C180.7 151.3 176 159.3 176 168V168z"/></svg></a>
+        </div>
+        <button class="rounded-full bg-transparent border-2 p-2 w-56 border-coloroftex mt-6 md:ml-52 ml-10">Watch all videos</button>
+    </div>
+
+    <div>
+        <h1 class="text-center">
+            Live life worry-free! PhonePe fulfills all your insurance needs with a wide variety of insurance choices that can be<br> bought instantly & easily with no annoying calls and disturbance! Protect your life, car, two-wheeler and much more<br> in a few simple clicks. Make a smart choice today and live tension-free tomorrow!
+        </h1>
+    </div>
+</section>
+
+<section class="bg-coloroftex5">
+    <div>
+        <div class="text-center text-white">
+            <h1 class="text-4xl font-bold p-4 text-coloroftex3">At 30+ Million<br> stores, apps, websites & more</h1>
+            <button class="rounded-full bg-coloroftex  border-2 p-2 w-56 border-coloroftex mt-6 text-center">Partner with Us</button>
+        
+        </div>
+        <div class="mt-20">
+            <img src="https://www.phonepe.com/webstatic/static/6f6a045306a14491bf6aa948f2dab1eb/5707d/partner-section-desk.png" alt="">
+        </div>
+        
+    </div>
+</section>
+
+
+
+</body>
+</html>
